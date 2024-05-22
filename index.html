@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="list">
+        <header>
+            <h1>To-Do List</h1>
+            <div class="authority">
+                <button id="login">Login</button>
+                <button id="logout" hidden>Logout</button>
+            </div>
+        </header>
+        <main>
+            <div class="task-input">
+                <input type="text" id="new-task" placeholder="Add a new task" disabled>
+            </div>
+            <div class="task-input">
+                <input type="date" id="task-date" disabled>
+                <input type="time" id="task-time" disabled>
+            </div>
+            <div class="task-input">
+                <button id="add-task" disabled>Add Task</button>
+            </div>
+            <ul id="task-list"></ul>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
